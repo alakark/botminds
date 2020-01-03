@@ -13,7 +13,7 @@
                       class="btn btn-outline-green">How it works <i class="lar la-play-circle font2"></i></a></p>
                 </div>
                 <div class="col-lg-5 iphone-wrap">
-                  <img src="img/hero-image.png" alt="Image" data-aos="fade-right">
+                  <img src="/wp-content/themes/botminds/img/hero-image.png" alt="Image" data-aos="fade-right">
                 </div>
               </div>
             </div>
@@ -32,7 +32,7 @@
           </div>
 
           <div class="row">
-            <img src="img/partners.png" />
+            <img src="/wp-content/themes/botminds/img/partners.png" />
                         
 
             </div>
@@ -101,23 +101,23 @@
                 <ul class="carousel-indicators list-inline mx-auto mt-5 px-2">
                   <li class="list-inline-item active">
                     <a id="carousel-selector-0 " class="selected" data-slide-to="0" data-target="#bot-industry">
-                      <img src="img/industry/tender.png" class="img-fluid text-center"><p class="text-center mt-4">Tender Role</p>
+                      <img src="/wp-content/themes/botminds/img/industry/tender.png" class="img-fluid text-center"><p class="text-center mt-4">Tender Role</p>
                     </a>
                    
                   </li>
                   <li class="list-inline-item">
                     <a id="carousel-selector-1" data-slide-to="1" data-target="#bot-industry">
-                      <img src="img/industry/RE.png" class="img-fluid text-center"><p class="text-center mt-4">RE Listing</p>
+                      <img src="/wp-content/themes/botminds/img/industry/RE.png" class="img-fluid text-center"><p class="text-center mt-4">RE Listing</p>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a id="carousel-selector-2" data-slide-to="2" data-target="#bot-industry">
-                      <img src="img/industry/lease.png" class="img-fluid text-center"><p class="text-center mt-4">Lease Abstract</p>
+                      <img src="/wp-content/themes/botminds/img/industry/lease.png" class="img-fluid text-center"><p class="text-center mt-4">Lease Abstract</p>
                     </a>
                   </li>
                     <li class="list-inline-item">
                     <a id="carousel-selector-3" data-slide-to="3" data-target="#bot-industry">
-                     <img src="img/industry/finance.png" class="img-fluid text-center"><p class="text-center mt-4">Finance</p>
+                     <img src="/wp-content/themes/botminds/img/industry/finance.png" class="img-fluid text-center"><p class="text-center mt-4">Finance</p>
                     </a>
                   </li>
                 </ul>

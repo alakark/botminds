@@ -21,13 +21,14 @@ services:
     # https://nickjanetakis.com/blog/docker-tip-28-named-volumes-vs-path-based-volumes
     volumes:
       - db_data:/var/lib/mysql
+      - ./botminds.sql:/docker-entrypoint-initdb.d/botminds.sql
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
+      MYSQL_DATABASE: botminds
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
     # List of networks to join
     networks:
       - wp
@@ -42,7 +43,7 @@ services:
     # https://docs.docker.com/compose/compose-file/#image
     # Feel free to add a version of WordPress
     # I.e. wordpress:5.2.0
-    image: wordpress
+    image: wordpress:latest
     # Define restart policy
     # https://docs.docker.com/compose/compose-file/#restart
     restart: always
@@ -52,13 +53,13 @@ services:
     # Useful for file edits
     # I like to map only wp-content
     # We should not care about WP core files
-    volumes: ["./:/var/www/html/wp-content"]
+    volumes: ["./wp-content:/var/www/html/wp-content"]
     # Add environment variables
     # https://docs.docker.com/compose/compose-file/#environment
     environment:
       WORDPRESS_DB_HOST: db:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password
     # Ports mapping
     ports:
       - 80:80
